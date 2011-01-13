@@ -1,0 +1,63 @@
+My own vim config.
+
+Functiond:
+    function! FindSubs()
+    function! Home ()
+    function! InArray (value, array)
+    function! NameCaseCamelToUnderscore ()
+    function! NameCaseUnderscoreToCamel ()
+    function! SetOverLength()
+    function! SafeCreateDir (dirpath)
+    function! StripSpaces(...)
+    function! ToggleFold()
+    function! ToggleNameCase ()
+    function! ToggleOption (option)
+    function! ToggleRelativeAbsoluteNumber()
+    function! s:ToggleYesNo()
+
+Mappings:
+    \fd - change current working directory to dirname () of file in current tab/buffer
+    \l - switch between absolute/relative numbers
+    \pwd - show current working directory
+    \r - read external file, written before by \w
+    \t - switch bool under cursor to opposite
+    \w - save selected data (visual mode) in external file (~/.vimxfer)
+    \y - like 'y', but save always to system clipoboard
+    \yy - like 'yy', save current line to system clipoboard
+    \z - substitute with word under cursor in first section
+
+    F1 - przelacza wyswietlanie znakow koncow linii/tabow etc
+    F2 - przełącz komentarz w kodzie
+    F3 - zakomentuj
+    S-F3 - odkomentuj
+    F4 - fuzzy finder
+    F5 - wyszukiwanie funkcji
+    D-F5 - powoduje wyswietlenie listy ze znalezionymi wystapieniami szukanego slowa
+    F6 - wczytaj ponowanie .vimrc
+    D-F6 - wczytaj biezacy plik
+    F7 - lista TODO z biezacego pliku
+    F8 - przelacza zapis z camel case -> underscore i odwrotnie
+    F9 - graphical undo
+    D-F9 - przelacza zawijanie linii
+    F10 - paste, no paste
+
+    > - indent
+    < - deindent
+
+    C-e - uruchom skrypt
+    C-l - dopelnienie abbreviations
+    C-n - usun podswietlenie wyszukiwania
+
+    Space - tworzy z zaznaczenia, lub zwija/rozwija istniejacy fold
+    C-Space - wygodniejsze omnicompletion
+    Home - przenosi nie na sztywno do pierwszej kolumny, tylko do pierwszej kolumny nie bedacej bialym znakiem
+    C-CR - wstawia <br />
+    S-Tab - wstawia 'prawdziwy' tabulator
+    S-Up - przesun kursor linia w gore, wraz z przeskrolowaniem o ta linie pliku
+    S-Down - przesun kursor linia w dol, wraz z przeskrolowaniem o ta linie pliku
+    C-S-Up - przesun zaznaczone lub biezaca linie w gore
+    C-S-Down - przesun zaznaczone lub biezaca linie w dol
+
+    komendy:
+        W  - like 'w', very common mispelling
+
