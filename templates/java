@@ -1,0 +1,7 @@
+class Test {
+    static java.io.PrintWriter stdout = new java.io.PrintWriter (System.out, true);
+    static java.io.PrintWriter stderr = new java.io.PrintWriter (System.err, true);
+    public static void main (String[] args) {
+    }
+}
+

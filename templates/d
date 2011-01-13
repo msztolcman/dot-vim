@@ -1,0 +1,9 @@
+module Test;
+
+import tango.io.Stdout;
+
+int main(char[][] argv) {
+
+	return 0;
+}
+
