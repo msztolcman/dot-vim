@@ -195,7 +195,7 @@ endif
 " ##############################################################################
 
 "~/.vim/doc jako dodatkowy katalog z dokumentacją
-if isdirectory ('~/.vim/doc')
+if isdirectory ($HOME . '/.vim/doc')
     helptags ~/.vim/doc
 endif
 
@@ -453,6 +453,7 @@ au FileType perl set makeprg=perl5.10\ -c\ %\ $*
 au FileType php set makeprg=php\ -f\ %\ $*
 au FileType ruby set makeprg=ruby\ %s\ $*
 au FileType python set makeprg=python2.6\ -tt\ %s\ $*
+au BufNew,BufEnter * if exists ('*indent_guides#enable') | call indent_guides#enable() | endif
 " au FileType perl,php set errorformat=%f:%l:%m
 
 
