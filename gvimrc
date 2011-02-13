@@ -10,3 +10,5 @@ if has ("gui_macvim")
     " w fullscreenie chcemy domyslnie wykorzystac tyle miejsca ile sie da
     se fuoptions=maxvert,maxhorz
 endif
+
+au BufNew,BufEnter * if exists ('*indent_guides#enable') | call indent_guides#enable() | endif
