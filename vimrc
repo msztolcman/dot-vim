@@ -156,6 +156,9 @@ set directory=~/.vim/tmp
 set grepprg="egrep -in"
 " wyladuj bufor jesli jest zamykana zakladka
 set nohidden
+set modeline
+set modelines=10
+
 if has ('persistent_undo')
     " persistent undo
     set undofile
@@ -453,7 +456,6 @@ au FileType perl set makeprg=perl5.10\ -c\ %\ $*
 au FileType php set makeprg=php\ -f\ %\ $*
 au FileType ruby set makeprg=ruby\ %s\ $*
 au FileType python set makeprg=python2.6\ -tt\ %s\ $*
-au BufNew,BufEnter * if exists ('*indent_guides#enable') | call indent_guides#enable() | endif
 " au FileType perl,php set errorformat=%f:%l:%m
 
 
@@ -571,7 +573,7 @@ vmap < <gv
 inoremap # X#
 
 "ctrl+n usuwa podswietlenie wyszukiwania
-nmap <silent> <C-N> :silent noh<CR>
+nmap <silent> <leader>n :silent noh<CR>
 
 " Make p in Visual mode replace the selected text with the "" register.
 " vnoremap p <Esc>:let current_reg = @"<CR>gvs<C-R>=current_reg<CR><Esc>
