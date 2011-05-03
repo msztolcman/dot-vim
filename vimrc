@@ -215,6 +215,8 @@ syntax on
 match Todo /@todo/
 
 "rozpoznawanie typu pliku
+filetype off
+call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
 if !exists(":DiffOrig")
