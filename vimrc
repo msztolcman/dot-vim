@@ -547,8 +547,11 @@ else
     imap <c-f1> :call ToggleOption ('list')<cr>a
 end
 
-" fuzzy finder
+" f4 - fuzzyfinder (FufFile)
 nmap <f4> :FufFile<cr>
+" ,j - fuzzyfinder (FufLine
+nmap <leader>j :FufLine<cr>
+
 " wyszukiwanie funkcji
 map <silent> <F5> :call FindSubs()<CR>
 " cmd-f5 powoduje wyswietlenie listy ze znalezionymi wystapieniami szukanego slowa
