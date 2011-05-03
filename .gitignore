@@ -1,7 +1,9 @@
-tmp
-undo
-backup
-view
+tmp/*
+undo/*
+backup/*
+view/*
 .VimballRecord
 .netrwhist
-doc/tags
+*.sw[nopqrstu]
+tags
+tags-ja
