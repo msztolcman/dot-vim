@@ -1,6 +1,6 @@
 My own vim config.
 
-Functiond:
+Functions:
     function! FindSubs()
     function! Home ()
     function! InArray (value, array)
@@ -16,15 +16,17 @@ Functiond:
     function! s:ToggleYesNo()
 
 Mappings:
-    \fd - change current working directory to dirname () of file in current tab/buffer
-    \l - switch between absolute/relative numbers
-    \pwd - show current working directory
-    \r - read external file, written before by \w
-    \t - switch bool under cursor to opposite
-    \w - save selected data (visual mode) in external file (~/.vimxfer)
-    \y - like 'y', but save always to system clipoboard
-    \yy - like 'yy', save current line to system clipoboard
-    \z - substitute with word under cursor in first section
+    ,fd - przejscie do folderu w ktorym znajduje sie biezacy plik
+    ,j - fuzzy finder per linia
+    ,l - przelacza relatywne/absolutne numerowanie
+    ,n - usun podswietlenie wyszukiwania
+    ,pwd - wyswietlenie biezacej sciezki
+    ,r - odczyt z zewn. pliku i wstawienie pod kursorem jego zawartosci
+    ,t - zmienia boola (rozne postacie) na przeciwnego
+    ,w - zapis zaznaczenia do zewn. plik
+    ,y - po dodaniu ruchu, kopiuje co wybrane do systemowego schowka
+    ,yy - kopiuje linię do systemowego schowka
+    ,z - robimy substitute z wypelnionym juz pierwszym polem jako tym co jest pod kursorem
 
     F1 - przelacza wyswietlanie znakow koncow linii/tabow etc
     F2 - przełącz komentarz w kodzie
@@ -38,15 +40,15 @@ Mappings:
     F7 - lista TODO z biezacego pliku
     F8 - przelacza zapis z camel case -> underscore i odwrotnie
     F9 - graphical undo
+    S-F9 - indent guides
     D-F9 - przelacza zawijanie linii
     F10 - paste, no paste
 
-    > - indent
-    < - deindent
+    > - kolejne wciecie
+    < - usun wciecie
 
     C-e - uruchom skrypt
     C-l - dopelnienie abbreviations
-    C-n - usun podswietlenie wyszukiwania
 
     Space - tworzy z zaznaczenia, lub zwija/rozwija istniejacy fold
     C-Space - wygodniejsze omnicompletion
@@ -58,6 +60,5 @@ Mappings:
     C-S-Up - przesun zaznaczone lub biezaca linie w gore
     C-S-Down - przesun zaznaczone lub biezaca linie w dol
 
-    komendy:
-        W  - like 'w', very common mispelling
-
+Commands:
+    W zastepuje 'w' - zapis pliku
