@@ -464,20 +464,23 @@ au FileType python set makeprg=python2.6\ -tt\ %s\ $*
 " mapowanie klawiszy
 " ##############################################################################
 
+" klawisz 'leader' ustawiamy na , zamiast normalnego \
+let mapleader = ','
+
 " uzywac zamiast 'y' (yank) do przenosznia czesci tekstu z jednego pliku do
 " drugiego (yank pozwala na max 50 linii, i nie pozwala robic tego na zywo,
 " przy edytowanych obydwoch plikach jednoczesnie w dwoch roznych instancjach
 " vima)
 if has("unix")
-    nmap \r   :r $HOME/.vimxfer<CR>
-    nmap \w   :'a,.w! $HOME/.vimxfer<CR>
-    vmap \r   c<esc>:r $HOME/.vimxfer<CR>
-    vmap \w   :w! $HOME/.vimxfer<CR>
+    nmap <leader>r   :r $HOME/.vimxfer<CR>
+    nmap <leader>w   :'a,.w! $HOME/.vimxfer<CR>
+    vmap <leader>r   c<esc>:r $HOME/.vimxfer<CR>
+    vmap <leader>w   :w! $HOME/.vimxfer<CR>
 elseif has("Win32")
-    nmap \r   :r ~/.vimxfer<CR>
-    nmap \w   :'a,.w! ~/.vimxfer<CR>
-    vmap \r   c<esc>:r ~/.vimxfer<cr>
-    vmap \w   :w! ~/.vimxfer<CR>
+    nmap <leader>r   :r ~/.vimxfer<CR>
+    nmap <leader>w   :'a,.w! ~/.vimxfer<CR>
+    vmap <leader>r   c<esc>:r ~/.vimxfer<cr>
+    vmap <leader>w   :w! ~/.vimxfer<CR>
 endif
 
 " zapisz plik poprzez CTRL+S
@@ -486,16 +489,19 @@ if !has ('mac')
     imap <C-s> <Esc>:up<cr>a
 endif
 
-" \fd zmienia cwd na ten z biezacego pliku
+" ,fd zmienia cwd na ten z biezacego pliku
 nmap <leader>fd :silent! cd %:p:h<cr><Leader>pwd
 
-" \l przelacza tryb numeracji linii
+" ,l przelacza tryb numeracji linii
 nnoremap <leader>l :call ToggleRelativeAbsoluteNumber()<CR>
 
-" \pwd wyswietla na dole biezacy katalog
+"ctrl+n usuwa podswietlenie wyszukiwania
+nmap <silent> <leader>n :silent noh<CR>
+
+" ,pwd wyswietla na dole biezacy katalog
 nmap <leader>pwd :echo getcwd ()<cr>
 
-" zmienia boola (rozne postacie) na przeciwnego
+" ,t zmienia boola (rozne postacie) na przeciwnego
 nnoremap <leader>t :call <SID>ToggleYesNo()<CR>
 
 " yank z liderem powoduje kopiowanie do systemowego schowka
@@ -545,25 +551,20 @@ end
 nmap <f4> :FufFile<cr>
 " wyszukiwanie funkcji
 map <silent> <F5> :call FindSubs()<CR>
-" shift-f5 powoduje wyswietlenie listy ze znalezionymi wystapieniami szukanego slowa
+" cmd-f5 powoduje wyswietlenie listy ze znalezionymi wystapieniami szukanego slowa
 map <D-f5> [I:let nr = input("Which one: ") <Bar>exe "normal " . nr ."[\t"<cr>
 "przeladuj ustawienia klawiszem F6
 map <F6> :so $MYVIMRC<cr>
-" a ctrl-f6 niech wczyta biezacy plik
+" cmd-f6 niech wczyta biezacy plik
 map <D-F6> :so %<cr>
 " camel case -> underscore i odwrotnie
 nmap <f8> :call ToggleNameCase ()<cr>
 " GUndo
 nnoremap <f9> :GundoToggle<cr>
-" s-f9 - przelacza zawijanie linii
+" cmd-f9 - przelacza zawijanie linii
 map <D-F9> :call ToggleOption('wrap')<cr>
 
-
-"tabulatorem robimy i usuwamy wciecia
-" map <Tab> V>
-" map <S-Tab> V<
-" vmap <Tab> >gv
-" vmap <S-Tab> <gv
+" latwiejsza praca z wcieciami
 nnoremap > >>
 nnoremap < <<
 vmap > >gv
@@ -571,9 +572,6 @@ vmap < <gv
 
 "zapewniamy sobie przesuwanie zahaszowanych linijek przy tabowaniu
 inoremap # X#
-
-"ctrl+n usuwa podswietlenie wyszukiwania
-nmap <silent> <leader>n :silent noh<CR>
 
 " Make p in Visual mode replace the selected text with the "" register.
 " vnoremap p <Esc>:let current_reg = @"<CR>gvs<C-R>=current_reg<CR><Esc>
@@ -620,9 +618,9 @@ call SafeCreateDir (&undodir)
 
 " konfiguracja vimviki
 let g:vimwiki_list = [
-    \ {'path': '/Users/mysz/Dropbox/system/.vimwiki_priv/', 'path_html': '/Users/mysz/Dropbox/system/.vimwiki_priv/html', 'ext': '.vimwiki', 'maxhi': '0'},
-    \ {'path': '/Users/mysz/Dropbox/system/.vimwiki_home/', 'path_html': '/Users/mysz/Dropbox/system/.vimwiki_home/html', 'ext': '.vimwiki', 'maxhi': '0'},
-    \ {'path': '/Users/mysz/Dropbox/system/.vimwiki_36monkeys/', 'path_html': '/Users/mysz/Dropbox/system/.vimwiki_36monkeys/html', 'ext': '.vimwiki', 'maxhi': '0'}
+    \ {'path': $HOME.'/Dropbox/system/.vimwiki_priv/', 'path_html': $HOME.'/Dropbox/system/.vimwiki_priv/html', 'ext': '.vimwiki', 'maxhi': '0'},
+    \ {'path': $HOME.'/Dropbox/system/.vimwiki_home/', 'path_html': $HOME.'/Dropbox/system/.vimwiki_home/html', 'ext': '.vimwiki', 'maxhi': '0'},
+    \ {'path': $HOME.'/Dropbox/system/.vimwiki_36monkeys/', 'path_html': $HOME.'/Dropbox/system/.vimwiki_36monkeys/html', 'ext': '.vimwiki', 'maxhi': '0'}
     \]
 let g:vimwiki_use_mouse = 1
 
