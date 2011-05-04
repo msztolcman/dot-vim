@@ -16,36 +16,36 @@ Functions:
     function! s:ToggleYesNo()
 
 Mappings:
-    ,fd - przejscie do folderu w ktorym znajduje sie biezacy plik
-    ,j - fuzzy finder per linia
-    ,l - przelacza relatywne/absolutne numerowanie
-    ,n - usun podswietlenie wyszukiwania
-    ,pwd - wyswietlenie biezacej sciezki
-    ,r - odczyt z zewn. pliku i wstawienie pod kursorem jego zawartosci
-    ,t - zmienia boola (rozne postacie) na przeciwnego
-    ,w - zapis zaznaczenia do zewn. plik
-    ,y - po dodaniu ruchu, kopiuje co wybrane do systemowego schowka
-    ,yy - kopiuje linię do systemowego schowka
-    ,z - robimy substitute z wypelnionym juz pierwszym polem jako tym co jest pod kursorem
+    ,fd - make 'cd:' to dirname () of current file
+    ,j - fuzzy finder per line (FufLine)
+    ,l - switch relative/absolute line numbering
+    ,n - disable search hilghlighting
+    ,pwd - the same as :pwd
+    ,r - read ~/.vimxfer file and put content below (look at ,w)
+    ,t - switch boolean (manyu different types, look at s:ToggleYesNo())
+    ,w - save selected text to external file (~/.vimxfer). Usefull when need to copy large part of data between vim instances. Use with ',r'.
+    ,y - (doesn't work) copy selected text to system clipboard (register *)
+    ,yy - copy current line to system clipboard (register *)
+    ,z - start global substitute (%s), first field is filled with word under cusor
 
-    F1 - przelacza wyswietlanie znakow koncow linii/tabow etc
-    F2 - przełącz komentarz w kodzie
-    F3 - zakomentuj
-    S-F3 - odkomentuj
-    F4 - fuzzy finder
-    F5 - wyszukiwanie funkcji
-    D-F5 - powoduje wyswietlenie listy ze znalezionymi wystapieniami szukanego slowa
-    F6 - wczytaj ponowanie .vimrc
-    D-F6 - wczytaj biezacy plik
-    F7 - lista TODO z biezacego pliku
-    F8 - przelacza zapis z camel case -> underscore i odwrotnie
-    F9 - graphical undo
-    S-F9 - indent guides
-    D-F9 - przelacza zawijanie linii
-    F10 - paste, no paste
+    F1 - toggle displaying of 'hidden' white characters
+    F2 - toggle comment/uncomment
+    F3 - comment (even if line is commented already)
+    S-F3 - uncomment
+    F4 - fuzzy finder (FufFile)
+    F5 - show function list and allow to go to this function (search with FindSubs() function)
+    D-F5 - show list of occurrences of current word
+    F6 - reload ~/.vimrc
+    D-F6 - load current file
+    F7 - show list of TODOs and FIXMEs from current file
+    F8 - toggle camel case -> underscores of word under cursor
+    F9 - toggle graphical undo
+    S-F9 - toggle indent guides
+    D-F9 - toggle wrap lines
+    F10 - toggle paste, no paste
 
-    > - kolejne wciecie
-    < - usun wciecie
+    > - indent
+    < - deindent
 
     C-e - uruchom skrypt
     C-l - dopelnienie abbreviations
