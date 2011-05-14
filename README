@@ -47,8 +47,10 @@ Mappings:
     > - indent
     < - deindent
 
-    C-e - uruchom skrypt
-    C-l - dopelnienie abbreviations
+    C-a - go to begin of line (^)
+    C-e - go to end of line ($)
+    C-l - abbreviation
+    D-e - run script in current buffer
 
     Space - tworzy z zaznaczenia, lub zwija/rozwija istniejacy fold
     C-Space - wygodniejsze omnicompletion
