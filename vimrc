@@ -524,9 +524,9 @@ inoremap <Down> <C-o>gj
 inoremap <Up> <C-o>gk
 
 " ctrl+down/up przesuwa kursor w dol/gore wraz ze scrollowaniem
-map <silent> <S-Down> 1<C-D>:set scroll=0<CR>
+map <silent> <S-Down> 1<C-d>:set scroll=0<CR>
 map <silent> <S-Up> 1<C-U>:set scroll=0<CR>
-imap <silent> <S-Down> <Esc>1<C-D>:set scroll=0<CR>I
+imap <silent> <S-Down> <Esc>1<C-d>:set scroll=0<CR>I
 imap <silent> <S-Up> <Esc>1<C-U>:set scroll=0<CR>I
 
 " ctrl+shift+up|down zamienia miejscami dwie linie
@@ -574,6 +574,10 @@ nnoremap > >>
 nnoremap < <<
 vmap > >gv
 vmap < <gv
+
+" latwiejsze przechodzenie na koniec/poczatek linii
+noremap <C-a> ^
+noremap <C-e> $
 
 "zapewniamy sobie przesuwanie zahaszowanych linijek przy tabowaniu
 inoremap # X#
