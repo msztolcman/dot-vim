@@ -224,7 +224,7 @@ function! MDP_Execute (...)
     python MDP_Execute ()
 endfunction
 command! -nargs=* Exe call MDP_Execute (<q-args>)
-map <C-e> :call MDP_Execute ()<cr>
+map <D-e> :call MDP_Execute ()<cr>
 
 " MDP_TODO_List - Wyszukanie wszystkich pozycji TODO i FIXME
 python << EOF
