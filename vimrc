@@ -498,7 +498,7 @@ nmap <leader>fd :silent! cd %:p:h<cr><Leader>pwd
 " ,l przelacza tryb numeracji linii
 nnoremap <leader>l :call ToggleRelativeAbsoluteNumber()<CR>
 
-"ctrl+n usuwa podswietlenie wyszukiwania
+" ,n usuwa podswietlenie wyszukiwania
 nmap <silent> <leader>n :silent noh<CR>
 
 " ,pwd wyswietla na dole biezacy katalog
@@ -507,8 +507,8 @@ nmap <leader>pwd :echo getcwd ()<cr>
 " ,t zmienia boola (rozne postacie) na przeciwnego
 nnoremap <leader>t :call <SID>ToggleYesNo()<CR>
 
-" ,td run TaskList plugin
-map <leader>td <Plug>TaskList
+" f7 run TaskList plugin
+map <f7> <Plug>TaskList
 
 " yank z liderem powoduje kopiowanie do systemowego schowka
 nmap <leader>y "*y
