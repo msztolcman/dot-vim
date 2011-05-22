@@ -101,7 +101,7 @@ set matchtime=5
 "jakie znaki tworza pary
 set matchpairs=(:),{:},[:],<:>
 "ustawiamy wyglad linii statusu
-set statusline=%(%r%h%w\ %)%m%f%Y\ \[%ob\]\ \[%{&ff}\]%=A:\ %b\ H:\ %B\ \ \ \ \ \ \ %c%V,%l(%L)\ (%p%%)\
+set statusline=%(%r%h%w\ %)%m%f%Y\ \[%ob\]\ \[%{&ff}\]%=%{fugitive#statusline()}\ \ \ \ A:\ %b\ H:\ %B\ \ \ \ \ \ \ %c%V,%l(%L)\ (%p%%)\
 "klawisz którym przełączamy siê miêdzy trybem paste a nopaste
 set pastetoggle=<F10>
 "zachowanie sie klawiszy ALT - prawy daje pliterki, lewy otwiera menu
