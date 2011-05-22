@@ -646,4 +646,5 @@ let g:vimwiki_use_mouse = 1
 " konfiguracja plugina gundo
 let g:gundo_preview_bottom = 1
 
+let snippets_dir=$HOME.'/.vim/snippets'
 
