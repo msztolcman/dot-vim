@@ -507,6 +507,9 @@ nmap <leader>pwd :echo getcwd ()<cr>
 " ,t zmienia boola (rozne postacie) na przeciwnego
 nnoremap <leader>t :call <SID>ToggleYesNo()<CR>
 
+" ,td run TaskList plugin
+map <leader>td <Plug>TaskList
+
 " yank z liderem powoduje kopiowanie do systemowego schowka
 nmap <leader>y "*y
 nmap <leader>yy "*yy
