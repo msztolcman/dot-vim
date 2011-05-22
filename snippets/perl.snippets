@@ -39,6 +39,11 @@ snippet class
 	}
 snippet sub
 	sub ${1} {
-		my ($q, ) = @_;
-		${2}
+		my (${2:$q, }) = @_;
+		${3}
 	}
+snippet subm
+		sub ${1} {
+			my ($self, ${2:$q, }) = @_;
+			${3}
+		}
