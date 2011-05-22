@@ -1,0 +1,44 @@
+snippet fore
+	foreach ${1}(${2}) {
+		${3}
+	}
+snippet for
+	for ${1}(${2}) {
+		${3}
+	}
+snippet new
+	sub new {
+		my ($class, $args, ) = @_;
+		my $self = {};${1}
+		return bless ($self, $class);
+	}
+snippet docf
+	# @function ${1}
+	# @descr
+	#	${2}
+	# @input
+	#	${3:brak}
+	# @output
+	# 	${4:brak}
+	# @related
+	#	${5}
+snippet docs
+	# @struct ${1}
+	# @descr
+	#	${2}
+snippet docc
+	# @const ${1}
+	# @descr
+	#	${2}
+snippet class
+	package ${1};
+	{
+		use base qw/${2}/;
+
+		${3}
+	}
+snippet sub
+	sub ${1} {
+		my ($q, ) = @_;
+		${2}
+	}
