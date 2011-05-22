@@ -56,7 +56,7 @@ Mappings:
     C-Space - simpler omnicomplete
     Home - move to first non-white character
     C-CR - insert <br /> in insert mode
-    S-Tab - insert 'real' tabulator (\t instead of spaces)
+    S-Tab - insert 'real' tab (\t instead of spaces)
     S-Up - move cursor up, and scroll line with it
     S-Down - move cursor down, and scroll line with it
     C-S-Up - swap current and above line (works with selection too)
