@@ -24,7 +24,7 @@ Mappings:
     ,r - read ~/.vimxfer file and put content below (look at ,w)
     ,t - switch boolean (manyu different types, look at s:ToggleYesNo())
     ,w - save selected text to external file (~/.vimxfer). Usefull when need to copy large part of data between vim instances. Use with ',r'.
-    ,y - (doesn't work) copy selected text to system clipboard (register *)
+    ,y - (doesn't work currently) copy selected text to system clipboard (register *)
     ,yy - copy current line to system clipboard (register *)
     ,z - start global substitute (%s), first field is filled with word under cusor
 
@@ -52,15 +52,15 @@ Mappings:
     C-l - abbreviation
     D-e - run script in current buffer
 
-    Space - tworzy z zaznaczenia, lub zwija/rozwija istniejacy fold
-    C-Space - wygodniejsze omnicompletion
-    Home - przenosi nie na sztywno do pierwszej kolumny, tylko do pierwszej kolumny nie bedacej bialym znakiem
-    C-CR - wstawia <br />
-    S-Tab - wstawia 'prawdziwy' tabulator
-    S-Up - przesun kursor linia w gore, wraz z przeskrolowaniem o ta linie pliku
-    S-Down - przesun kursor linia w dol, wraz z przeskrolowaniem o ta linie pliku
-    C-S-Up - przesun zaznaczone lub biezaca linie w gore
-    C-S-Down - przesun zaznaczone lub biezaca linie w dol
+    Space - in visual mode, then make fold with selected, in other case make fold/unfold
+    C-Space - simpler omnicomplete
+    Home - move to first non-white character
+    C-CR - insert <br /> in insert mode
+    S-Tab - insert 'real' tabulator (\t instead of spaces)
+    S-Up - move cursor up, and scroll line with it
+    S-Down - move cursor down, and scroll line with it
+    C-S-Up - swap current and above line (works with selection too)
+    C-S-Down - swap current and below line (works with selection too)
 
 Commands:
-    W zastepuje 'w' - zapis pliku
+    W - the same as 'w' - write buffer
