@@ -614,6 +614,12 @@ imap <silent> <S-tab> <C-v><tab>
 "w trybie edycji wstawia <br /> po wcisnieciu CTRL+ENTER
 imap <C-CR> <br />
 
+" mapujemy komendy dla mydevplugins
+map <silent> <F3> :call MDP_Commentify_Comment()<CR>
+map <silent> <S-F3> :call MDP_Commentify_UnComment()<CR>
+map <silent> <F2> :call MDP_Commentify_Switch()<CR>
+map <D-e> :call MDP_Execute ()<cr>
+
 " Remap :W to :w
 command! W w
 

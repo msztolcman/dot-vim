@@ -146,17 +146,14 @@ EOF
 function! MDP_Commentify_Comment ()
     python MDP_Commentify_RangeExecute (_MDP_Commentify_Comment)
 endfunction
-map <silent> <F3> :call MDP_Commentify_Comment()<CR>
 
 function! MDP_Commentify_UnComment ()
     python MDP_Commentify_RangeExecute (_MDP_Commentify_UnComment)
 endfunction
-map <silent> <S-F3> :call MDP_Commentify_UnComment()<CR>
 
 function! MDP_Commentify_Switch ()
     python MDP_Commentify_RangeExecute (_MDP_Commentify_Switch)
 endfunction
-map <silent> <F2> :call MDP_Commentify_Switch()<CR>
 
 " MDP_Run_Script - uruchamianie pisanych skryptów/programów
 python << EOF
@@ -224,7 +221,6 @@ function! MDP_Execute (...)
     python MDP_Execute ()
 endfunction
 command! -nargs=* Exe call MDP_Execute (<q-args>)
-map <D-e> :call MDP_Execute ()<cr>
 
 " MDP_TODO_List - Wyszukanie wszystkich pozycji TODO i FIXME
 python << EOF
