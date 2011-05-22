@@ -1,7 +1,0 @@
-#!/bin/bash
-
-for i in bundle/*; do
-    if [ ! -f $i/.gitignore ]; then
-        ln -s `pwd`/.gitignore.bundle $i/.gitignore
-    fi
-done
