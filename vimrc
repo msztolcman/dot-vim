@@ -618,7 +618,8 @@ imap <C-CR> <br />
 map <silent> <F3> :call MDP_Commentify_Comment()<CR>
 map <silent> <S-F3> :call MDP_Commentify_UnComment()<CR>
 map <silent> <F2> :call MDP_Commentify_Switch()<CR>
-map <Leader>p :call MDP_Execute ()<cr>
+" map <Leader>p :call MDP_Execute ()<cr>
+map <Leader>p <Plug>(quickrun)
 
 " Remap :W to :w
 command! W w
@@ -647,6 +648,9 @@ let g:vimwiki_use_mouse = 1
 let g:gundo_preview_bottom = 1
 
 let snippets_dir=$HOME.'/.vim/snippets'
+
+" quickrun config
+let g:quickrun_no_default_key_mappings
 let g:quickrun_config = {
 \   '_': {
 \       'split': '',
