@@ -20,6 +20,7 @@ Mappings:
     ,j - fuzzy finder per line (FufLine)
     ,l - switch relative/absolute line numbering
     ,n - disable search hilghlighting
+    ,p - run script in current buffer
     ,pwd - the same as :pwd
     ,r - read ~/.vimxfer file and put content below (look at ,w)
     ,t - switch boolean (manyu different types, look at s:ToggleYesNo())
@@ -50,7 +51,6 @@ Mappings:
     C-a - go to begin of line (^)
     C-e - go to end of line ($)
     C-l - abbreviation
-    D-e - run script in current buffer
 
     Space - in visual mode, then make fold with selected, in other case make fold/unfold
     C-Space - simpler omnicomplete
