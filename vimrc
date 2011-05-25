@@ -660,3 +660,7 @@ let g:quickrun_config = {
 
 runtime! macros/matchit.vim
 
+if filereadable ($HOME.'/.vimrc.local')
+    source $HOME/.vimrc.local
+endif
+
