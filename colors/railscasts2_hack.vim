@@ -55,7 +55,7 @@ hi PMenuThumb                guibg=#AAAAAA gui=NONE
 
 
 "rubyComment
-hi Comment                   guifg=#BC9458 gui=italic
+hi Comment                   guifg=#546B7B gui=italic
 hi Todo                      guifg=#BC9458 guibg=NONE gui=italic
 
 "rubyPseudoVariable
@@ -125,3 +125,4 @@ hi xmlEndTag                 guifg=#E8BF6A
 "Invisible character colors
 hi NonText guifg=#4a4a59
 hi SpecialKey guifg=#4a4a59
+
