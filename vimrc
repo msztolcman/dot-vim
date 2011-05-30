@@ -100,6 +100,8 @@ set showmatch
 set matchtime=5
 "jakie znaki tworza pary
 set matchpairs=(:),{:},[:],<:>
+" don't insert 2 spaces after punctuation
+set nojoinspaces
 "ustawiamy wyglad linii statusu
 set statusline=%(%r%h%w\ %)%m%f%Y\ \[%ob\]\ \[%{&ff}\]%=%{fugitive#statusline()}\ \ \ \ A:\ %b\ H:\ %B\ \ \ \ \ \ \ %c%V,%l(%L)\ (%p%%)\
 "klawisz którym przełączamy siê miêdzy trybem paste a nopaste
