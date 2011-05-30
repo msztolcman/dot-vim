@@ -621,6 +621,22 @@ map <silent> <F2> :call MDP_Commentify_Switch()<CR>
 " map <Leader>p :call MDP_Execute ()<cr>
 map <Leader>p <Plug>(quickrun)
 
+" switch ` and ':
+" ' jumps to the beginning of the line where is a mark
+" ` jumps to the exact location of a mark
+" jumping to the exact location is more useful
+noremap ' `
+noremap ` '
+
+" simpler regexes
+nnoremap / /\v
+vnoremap / /\v
+nnoremap ? ?\v
+vnoremap ? ?\v
+
+" reformat
+nnoremap <leader>q gqip
+
 " Remap :W to :w
 command! W w
 

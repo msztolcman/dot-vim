@@ -22,6 +22,7 @@ Mappings:
     ,n - disable search hilghlighting
     ,p - run script in current buffer
     ,pwd - the same as :pwd
+    ,q - reformatting
     ,r - read ~/.vimxfer file and put content below (look at ,w)
     ,t - switch boolean (manyu different types, look at s:ToggleYesNo())
     ,w - save selected text to external file (~/.vimxfer). Usefull when need to copy large part of data between vim instances. Use with ',r'.
@@ -61,6 +62,12 @@ Mappings:
     S-Down - move cursor down, and scroll line with it
     C-S-Up - swap current and above line (works with selection too)
     C-S-Down - swap current and below line (works with selection too)
+
+    ' - swap with `
+    ` - swap with '
+
+    / - insert /\v - simplified regexes
+    ? - insert ?\v - simplified regexes
 
 Commands:
     W - the same as 'w' - write buffer
