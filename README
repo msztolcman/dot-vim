@@ -24,6 +24,7 @@ Mappings:
     ,pwd - the same as :pwd
     ,q - reformatting
     ,r - read ~/.vimxfer file and put content below (look at ,w)
+    ,s - toggle speelchecking
     ,t - switch boolean (manyu different types, look at s:ToggleYesNo())
     ,w - save selected text to external file (~/.vimxfer). Usefull when need to copy large part of data between vim instances. Use with ',r'.
     ,y - (doesn't work currently) copy selected text to system clipboard (register *)

@@ -154,12 +154,14 @@ set nospell
 " chcemy zapisywac pliki tymczasowe/backupy w jednym miejscu
 set backupdir=~/.vim/backup
 set directory=~/.vim/tmp
-" jako grep zuywamy programu:
+" jako grep uzywamy programu:
 set grepprg="egrep -in"
 " wyladuj bufor jesli jest zamykana zakladka
 set nohidden
 set modeline
 set modelines=10
+" formatting with par
+set formatprg=par\ -T4\ -w140
 
 if has ('persistent_undo')
     " persistent undo
@@ -515,6 +517,9 @@ map <f7> <Plug>TaskList
 " yank z liderem powoduje kopiowanie do systemowego schowka
 nmap <leader>y "*y
 nmap <leader>yy "*yy
+
+" toggle spellchecking
+nmap <silent> <leader>s :set spell!<cr>
 
 " Start substitution with word under cursor
 nmap <leader>z :%s/\<<c-r><c-w>\>/
