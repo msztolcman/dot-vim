@@ -42,3 +42,7 @@
 	path = bundle/tlib
 	url = https://github.com/tomtom/tlib_vim.git
 	ignore = untracked
+[submodule "bundle/tmarks"]
+	path = bundle/tmarks
+	url = https://github.com/tomtom/tmarks_vim.git
+	ignore = untracked
