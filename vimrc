@@ -635,7 +635,7 @@ map <Leader>p <Plug>(quickrun)
 noremap ' `
 noremap ` '
 
-" simpler regexes
+" simplier regexes
 nnoremap / /\v
 vnoremap / /\v
 nnoremap ? ?\v
