@@ -50,3 +50,7 @@
 	path = bundle/tcomment
 	url = https://github.com/tomtom/tcomment_vim.git
 	ignore = untracked
+[submodule "bundle/tjumps"]
+	path = bundle/tjumps
+	url = https://github.com/tomtom/tjumps_vim.git
+	ignore = untracked
