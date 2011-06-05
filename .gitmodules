@@ -50,3 +50,7 @@
 	path = bundle/tjumps
 	url = https://github.com/tomtom/tjumps_vim.git
 	ignore = untracked
+[submodule "bundle/tregisters"]
+	path = bundle/tregisters
+	url = https://github.com/tomtom/tregisters_vim.git
+	ignore = untracked
