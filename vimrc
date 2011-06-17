@@ -638,12 +638,6 @@ map <Leader>p <Plug>(quickrun)
 noremap ' `
 noremap ` '
 
-" simplier regexes
-nnoremap / /\v
-vnoremap / /\v
-nnoremap ? ?\v
-vnoremap ? ?\v
-
 " reformat
 nnoremap <leader>q gqip
 
