@@ -459,6 +459,9 @@ autocmd BufReadPost,BufWrite * call SetOverLength()
 
 autocmd BufWrite * call StripSpaces(1)
 
+" better omnicomplete
+autocmd Filetype * if &omnifunc == "" | setlocal omnifunc=syntaxcomplete#Complete | endif
+
 au FileType perl set makeprg=perl5.10\ -c\ %\ $*
 au FileType php set makeprg=php\ -f\ %\ $*
 au FileType ruby set makeprg=ruby\ %s\ $*
