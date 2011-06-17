@@ -67,8 +67,5 @@ Mappings:
     ' - swap with `
     ` - swap with '
 
-    / - insert /\v - simplified regexes
-    ? - insert ?\v - simplified regexes
-
 Commands:
     W - the same as 'w' - write buffer
