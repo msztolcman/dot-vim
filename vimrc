@@ -654,7 +654,9 @@ let &guicursor = &guicursor . ",a:blinkon0"
 " upewniamy sie ze istnieja potrzebne nam foldery
 call SafeCreateDir (&backupdir)
 call SafeCreateDir (&directory)
-call SafeCreateDir (&undodir)
+if has ('persistent_undo')
+    call SafeCreateDir (&undodir)
+endif
 
 " konfiguracja vimviki
 let g:vimwiki_list = [
