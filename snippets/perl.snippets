@@ -47,7 +47,20 @@ snippet sub
 		${3}
 	}
 snippet subm
-		sub ${1} {
-			my ($self, ${2:$q, }) = @_;
-			${3}
-		}
+	sub ${1} {
+		my ($self, ${2:$q, }) = @_;
+		${3}
+	}
+snippet H!
+	#< /hidden/home /hidden/variables
+
+	sub main {
+		${1}
+	}
+
+	# $Id$
+	# vim: ft=perl
+snippet main
+	sub main {
+		${1}
+	}
