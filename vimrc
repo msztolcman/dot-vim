@@ -5,6 +5,9 @@
 "brak zgodnosci z VI
 set nocompatible
 
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 "dlugosc tabulatora
 set tabstop=4
 "dlugosc wciec przy autoindent
@@ -206,22 +209,21 @@ if isdirectory ($HOME . '/.vim/doc')
     helptags ~/.vim/doc
 endif
 
+syntax enable
+
 "schemat kolorow
 " if has('gui_running')
 "     color molokai
 "     let molokai_original=1
 " else
-    color evening
+"     color evening
+    colorscheme solarized
 " endif
 "podswietlanie skladni
-syntax on
 
 match Todo /@todo/
 
 "rozpoznawanie typu pliku
-filetype off
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
 filetype plugin indent on
 
 if !exists(":DiffOrig")
@@ -668,6 +670,9 @@ let g:vimwiki_use_mouse = 1
 
 " konfiguracja plugina gundo
 let g:gundo_preview_bottom = 1
+
+" solarized colors
+let g:solarized_termcolors=256
 
 let snippets_dir=$HOME.'/.vim/snippets'
 
