@@ -310,7 +310,7 @@ endfunction
 
 " funkcja ustawia kolor za 140 kolumna, jesli edytowany plik ma typ zawarty w
 " ponizszej zmiennej
-let s:prgm_filetypes = ['perl', 'php', 'python', 'javascript', 'vim', 'cpp', 'c', 'java', 'cs']
+let s:prgm_filetypes = ['perl', 'php', 'python', 'javascript', 'vim', 'cpp', 'c', 'java', 'cs', 'ruby']
 highlight OverLength ctermbg=red ctermfg=white guibg=red guifg=white
 function! SetOverLength()
     if !&bin && &ft != '' && InArray (tolower (&ft), s:prgm_filetypes)
