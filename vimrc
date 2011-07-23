@@ -443,6 +443,8 @@ au BufNewFile,BufRead *.mako set ft=mako
 au BufNewFile,BufRead *.tpl  set filetype=tpl syntax=html
 " json jako javascript
 au BufNewFile,BufRead *.json set filetype=json syntax=javascript
+" nginx
+au BufRead,BufNewFile /etc/nginx/* setlocal ft=nginx
 
 "pliki szablonow przy nowo tworzonych plikach
 autocmd BufNewFile * sil! exe "read ~/.vim/templates/"
