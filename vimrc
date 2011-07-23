@@ -212,15 +212,13 @@ endif
 syntax enable
 
 "schemat kolorow
-" if has('gui_running')
-"     color molokai
-"     let molokai_original=1
-" else
-"     color evening
+if has('gui_running')
     colorscheme solarized
-" endif
-"podswietlanie skladni
+else
+    color evening
+endif
 
+"podswietlanie skladni
 match Todo /@todo/
 
 "rozpoznawanie typu pliku
