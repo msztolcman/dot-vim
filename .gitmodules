@@ -58,3 +58,7 @@
 	path = bundle/solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
 	ignore = untracked
+[submodule "bundle/sudo-gui"]
+	path = bundle/sudo-gui
+	url = https://github.com/gmarik/sudo-gui.vim.git
+	ignore = untracked
