@@ -62,3 +62,7 @@
 	path = bundle/sudo-gui
 	url = https://github.com/gmarik/sudo-gui.vim.git
 	ignore = untracked
+[submodule "bundle/SearchComplete"]
+	path = bundle/SearchComplete
+	url = https://github.com/vim-scripts/SearchComplete.git
+	ignore = untracked
