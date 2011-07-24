@@ -591,10 +591,6 @@ nnoremap < <<
 vmap > >gv
 vmap < <gv
 
-" latwiejsze przechodzenie na koniec/poczatek linii
-" noremap <C-a> ^
-" noremap <C-e> $
-
 "zapewniamy sobie przesuwanie zahaszowanych linijek przy tabowaniu
 inoremap # X#
 

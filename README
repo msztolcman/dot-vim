@@ -51,8 +51,6 @@ Mappings:
     > - indent
     < - deindent
 
-    C-a - go to begin of line (^)
-    C-e - go to end of line ($)
     C-l - expand abbreviation
 
     Space - in visual mode, then make fold with selected, in other case make fold/unfold
