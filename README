@@ -16,6 +16,7 @@ Functions:
     function! s:ToggleYesNo()
 
 Mappings:
+    ,a= - align equal signs with Tabularize plugin
     ,fd - make 'cd:' to dirname () of current file
     ,j - fuzzy finder per line (FufLine)
     ,l - switch relative/absolute line numbering

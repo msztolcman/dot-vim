@@ -643,6 +643,10 @@ noremap ` '
 " reformat
 nnoremap <leader>q gqip
 
+" tabularize plugin
+nmap <Leader>a= :Tabularize /=<CR>
+vmap <Leader>a= :Tabularize /=<CR>
+
 " Remap :W to :w
 command! W w
 
