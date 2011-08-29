@@ -306,6 +306,18 @@ function! NameCaseUnderscoreToCamel ()
     echo
 endfunction
 
+" przeladowanie snippetow na zadanie (istream.hu, http://code.google.com/p/snipmate/issues/detail?id=67)
+function! ReloadSnippets (snippets_dir, ft)
+    if strlen (a:ft)  == 0
+        let filetype = "_"
+    else
+        let filetype = a:ft
+    endif
+
+    call ResetSnippets (filetype)
+    call GetSnippets (a:snippets_dir, filetype)
+endfunction
+
 " funkcja ustawia kolor za 140 kolumna, jesli edytowany plik ma typ zawarty w
 " ponizszej zmiennej
 let s:prgm_filetypes = ['perl', 'php', 'python', 'javascript', 'vim', 'cpp', 'c', 'java', 'cs', 'ruby']
@@ -645,6 +657,9 @@ vmap <Leader>a= :Tabularize /=<CR>
 
 " Remap :W to :w
 command! W w
+
+" przeladowanie snippetow - ReloadSnippets
+nmap ,rs :call ReloadSnippets (snippets_dir, &filetype)<CR>
 
 " ##############################################################################
 " pozostale
