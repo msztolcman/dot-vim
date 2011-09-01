@@ -566,16 +566,11 @@ vmap <C-S-Down> :move '>+1<CR>gv
 vmap <C-S-Up> :move '<-2<CR>gv
 
 
-" f1 - przelacza wyswietlanie znakow koncow linii/tabow etc
-nmap <f1> :call ToggleOption ('list')<cr>
-imap <f1> :call ToggleOption ('list')<cr>a
-if has ('mac')
-    nmap <d-f1> :call ToggleOption ('list')<cr>
-    imap <d-f1> :call ToggleOption ('list')<cr>a
-else
-    nmap <c-f1> :call ToggleOption ('list')<cr>
-    imap <c-f1> :call ToggleOption ('list')<cr>a
-end
+" f1 - przelacza zawijanie linii
+map <F1> :call ToggleOption('wrap')<cr>
+" c-f1 - przelacza wyswietlanie znakow koncow linii/tabow etc
+nmap <c-f1> :call ToggleOption ('list')<cr>
+imap <c-f1> :call ToggleOption ('list')<cr>a
 
 " f4 - fuzzyfinder (FufFile)
 nmap <f4> :FufFile<cr>
@@ -584,18 +579,16 @@ nmap <leader>j :FufLine<cr>
 
 " wyszukiwanie funkcji
 map <silent> <F5> :call FindSubs()<CR>
-" cmd-f5 powoduje wyswietlenie listy ze znalezionymi wystapieniami szukanego slowa
-map <D-f5> [I:let nr = input("Which one: ") <Bar>exe "normal " . nr ."[\t"<cr>
+" ctrl-f5 powoduje wyswietlenie listy ze znalezionymi wystapieniami szukanego slowa
+map <c-f5> [I:let nr = input("Which one: ") <Bar>exe "normal " . nr ."[\t"<cr>
 "przeladuj ustawienia klawiszem F6
 map <F6> :so $MYVIMRC<cr>
-" cmd-f6 niech wczyta biezacy plik
-map <D-F6> :so %<cr>
+" ctrl-f6 niech wczyta biezacy plik
+map <c-F6> :so %<cr>
 " camel case -> underscore i odwrotnie
 nmap <f8> :call ToggleNameCase ()<cr>
 " GUndo
 nnoremap <f9> :GundoToggle<cr>
-" cmd-f9 - przelacza zawijanie linii
-map <D-F9> :call ToggleOption('wrap')<cr>
 
 " latwiejsza praca z wcieciami
 nnoremap > >>

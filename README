@@ -25,27 +25,28 @@ Mappings:
     ,pwd - the same as :pwd
     ,q - reformatting
     ,r - read ~/.vimxfer file and put content below (look at ,w)
+    ,rs - reload SnipMate snippets for current filetype
     ,s - toggle speelchecking
-    ,t - switch boolean (manyu different types, look at s:ToggleYesNo())
+    ,t - switch boolean (many different types, look at s:ToggleYesNo())
     ,w - save selected text to external file (~/.vimxfer). Usefull when need to copy large part of data between vim instances. Use with ',r'.
     ,y - (doesn't work currently) copy selected text to system clipboard (register *)
     ,yy - copy current line to system clipboard (register *)
     ,z - start global substitute (%s), first field is filled with word under cusor
 
-    F1 - toggle displaying of 'hidden' white characters
+    F1 - toggle wrap lines
+    C-F1 - toggle displaying of 'hidden' white characters
     F2 - toggle comment/uncomment
-    F3 - comment (even if line is commented already)
-    S-F3 - uncomment
-    F4 - fuzzy finder (FufFile)
+    F3 - force comment (even if line is commented already)
+    S-F3 - force uncomment
+    F4 - fuzzy finder for file (FufFile)
     F5 - show function list and allow to go to this function (search with FindSubs() function)
-    D-F5 - show list of occurrences of current word
+    c-F5 - show list of occurrences of current word
     F6 - reload ~/.vimrc
-    D-F6 - load current file
+    C-F6 - load current file
     F7 - show list of TODOs and FIXMEs from current file
     F8 - toggle camel case -> underscores of word under cursor
     F9 - toggle graphical undo
     S-F9 - toggle indent guides
-    D-F9 - toggle wrap lines
     F10 - toggle paste, no paste
 
     > - indent
