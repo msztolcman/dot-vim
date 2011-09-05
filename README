@@ -15,7 +15,7 @@ Functions:
     function! ToggleRelativeAbsoluteNumber()
     function! s:ToggleYesNo()
 
-Mappings:
+Mappings (, is a <Leader> key, but comma is more readable ;) ):
     ,a= - align equal signs with Tabularize plugin
     ,fd - make 'cd:' to dirname () of current file
     ,j - fuzzy finder per line (FufLine)
@@ -40,7 +40,7 @@ Mappings:
     S-F3 - force uncomment
     F4 - fuzzy finder for file (FufFile)
     F5 - show function list and allow to go to this function (search with FindSubs() function)
-    c-F5 - show list of occurrences of current word
+    C-F5 - show list of occurrences of current word
     F6 - reload ~/.vimrc
     C-F6 - load current file
     F7 - show list of TODOs and FIXMEs from current file
