@@ -705,6 +705,9 @@ let g:quickrun_config = {
 \   }
 \}
 
+" LargeFile definition
+let g:LargeFile = 6
+
 runtime! macros/matchit.vim
 
 if filereadable ($HOME.'/.vimrc.local')
