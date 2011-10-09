@@ -70,3 +70,7 @@
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
 	ignore = untracked
+[submodule "bundle/LargeFile"]
+	path = bundle/LargeFile
+	url = https://github.com/vim-scripts/LargeFile.git
+	ignore = untracked
