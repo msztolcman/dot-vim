@@ -119,7 +119,7 @@ set nocursorline
 set nocursorcolumn
 " w trybie komend pokazuje liste opcji po wcisnieciu tabulatora
 set wildmenu
-set wildignore=.svn,CVS,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,*.git
+set wildignore=.svn,CVS,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,.git,.hg
 " jeśli zawartość paragrafu jest zbyt długa, pokaż go (zamiast @)
 set display+=lastline
 " rozrozniamy takie kodowania:
