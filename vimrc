@@ -618,9 +618,6 @@ inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 "dopelnianie z iab'ow za pomoca ctrl+l
 imap <c-l> <c-]>
 
-" omnicompletion pod ctrl+spacja
-map <c-space> 
-
 "Shift-tab to insert a hard tab
 imap <silent> <S-tab> <C-v><tab>
 
