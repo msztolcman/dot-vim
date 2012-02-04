@@ -488,7 +488,7 @@ au FileType python set makeprg=python2.6\ -tt\ %s\ $*
 " mapowanie klawiszy
 " ##############################################################################
 
-" klawisz 'leader' ustawiamy na , zamiast normalnego \
+" map <leader> key from default \ (backslash) to , (comma)
 let mapleader = ','
 
 " uzywac zamiast 'y' (yank) do przenosznia czesci tekstu z jednego pliku do
@@ -507,22 +507,22 @@ elseif has("Win32")
     vmap <leader>w   :w! ~/.vimxfer<CR>
 endif
 
-" zapisz plik poprzez CTRL+S
+" save file with <c-s>
 if !has ('mac')
     map <C-s> :up<cr>
     imap <C-s> <Esc>:up<cr>a
 endif
 
-" ,fd zmienia cwd na ten z biezacego pliku
+" ,fd switch current working directory to parent of currently edited file
 nmap <leader>fd :silent! cd %:p:h<cr><Leader>pwd
 
 " ,l przelacza tryb numeracji linii
 nnoremap <leader>l :call ToggleRelativeAbsoluteNumber()<CR>
 
-" ,n usuwa podswietlenie wyszukiwania
+" ,n remove search highlinth
 nmap <silent> <leader>n :silent noh<CR>
 
-" ,pwd wyswietla na dole biezacy katalog
+" ,pwd prints current working directory
 nmap <leader>pwd :echo getcwd ()<cr>
 
 " ,t zmienia boola (rozne postacie) na przeciwnego
@@ -531,7 +531,7 @@ nnoremap <leader>t :call <SID>ToggleYesNo()<CR>
 " f7 run TaskList plugin
 map <f7> <Plug>TaskList
 
-" yank z liderem powoduje kopiowanie do systemowego schowka
+" use <leader>y to copy to system clipboard
 nmap <leader>y "*y
 nmap <leader>yy "*yy
 
