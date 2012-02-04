@@ -476,10 +476,10 @@ autocmd BufWrite * call StripSpaces(1)
 " better omnicomplete
 autocmd Filetype * if &omnifunc == "" | setlocal omnifunc=syntaxcomplete#Complete | endif
 
-au FileType perl set makeprg=perl5.10\ -c\ %\ $*
+au FileType perl set makeprg=perl5.12\ -c\ %\ $*
 au FileType php set makeprg=php\ -f\ %\ $*
 au FileType ruby set makeprg=ruby\ %s\ $*
-au FileType python set makeprg=python2.6\ -tt\ %s\ $*
+au FileType python set makeprg=python2.7\ -tt\ %s\ $*
 " au FileType perl,php set errorformat=%f:%l:%m
 
 
