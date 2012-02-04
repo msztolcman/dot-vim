@@ -650,14 +650,6 @@ if has ('persistent_undo')
     call SafeCreateDir (&undodir)
 endif
 
-" konfiguracja vimviki
-let g:vimwiki_list = [
-    \ {'path': $HOME.'/Dropbox/system/.vimwiki_priv/', 'path_html': $HOME.'/Dropbox/system/.vimwiki_priv/html', 'ext': '.vimwiki', 'maxhi': '0'},
-    \ {'path': $HOME.'/Dropbox/system/.vimwiki_home/', 'path_html': $HOME.'/Dropbox/system/.vimwiki_home/html', 'ext': '.vimwiki', 'maxhi': '0'},
-    \ {'path': $HOME.'/Dropbox/system/.vimwiki_36monkeys/', 'path_html': $HOME.'/Dropbox/system/.vimwiki_36monkeys/html', 'ext': '.vimwiki', 'maxhi': '0'}
-    \]
-let g:vimwiki_use_mouse = 1
-
 " konfiguracja plugina gundo
 let g:gundo_preview_bottom = 1
 
