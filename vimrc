@@ -277,9 +277,9 @@ function! InArray (value, array)
     return count (a:array, a:value) > 0
 endfunction
 
-" zamiana nazwy pod kursorem z camelcase na wersje z podkreslnikami
+" replace CamelCase name into 'underscored'
 function! NameCaseCamelToUnderscore ()
-    " zapamietujemy obecna zawartosc rejestru
+    " save current z register content into variable
     let l:old_reg_z = getreg ('z')
 
     exec ':normal vawh"zx\<esc>'
@@ -287,21 +287,21 @@ function! NameCaseCamelToUnderscore ()
     let @z = substitute (@z, '^_', '', '')
     exec ':normal "zP'
 
-    " przywracamy stara zawartosc rejestru
+    " restore old z register content
     call setreg ('z', l:old_reg_z)
     echo
 endfunction
 
-" zamiana nazwy pod kursorem z podkreslnikowej na camelcase
+" replace 'underscored' name to CamelCase
 function! NameCaseUnderscoreToCamel ()
-    " zapamietujemy obecna zawartosc rejestru
+    " save current z register content into variable
     let l:old_reg_z = getreg ('z')
 
     exec ':normal vawh"zx\<esc>'
     let @z = substitute (@z, '\(_\|\<\)\(\l\)', '\u\2', 'g')
     exec ':normal "zP'
 
-    " przywracamy stara zawartosc rejestru
+    " restore old z register content
     call setreg ('z', l:old_reg_z)
     echo
 endfunction
