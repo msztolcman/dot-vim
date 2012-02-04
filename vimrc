@@ -615,9 +615,6 @@ nnoremap <silent> <home> :call Home()<CR>
 " po ctrl+[np] enter nie wstawi znaku nowej linii, tylko zaznaczony tekst
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
-"dopelnianie z iab'ow za pomoca ctrl+l
-imap <c-l> <c-]>
-
 "Shift-tab to insert a hard tab
 imap <silent> <S-tab> <C-v><tab>
 

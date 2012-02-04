@@ -52,8 +52,6 @@ Mappings (, is a <Leader> key, but comma is more readable ;) ):
     > - indent
     < - deindent
 
-    C-l - expand abbreviation
-
     Space - in visual mode, then make fold with selected, in other case make fold/unfold
     Home - move to first non-white character
     C-CR - insert <br /> in insert mode
