@@ -663,7 +663,7 @@ vmap <Leader>a= :Tabularize /=<CR>
 command! W w
 
 " przeladowanie snippetow - ReloadSnippets
-nmap ,rs :call ReloadSnippets (snippets_dir, &filetype)<CR>
+nmap <silent> ,rs :call ReloadAllSnippets ()<CR>
 
 " ##############################################################################
 " pozostale
