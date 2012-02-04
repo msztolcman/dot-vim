@@ -48,9 +48,15 @@ snippet docp
 snippet class
 	package ${1};
 	{
-		use base qw/${2}/;
+		parent qw/${2}/;
 
 		${3}
+	}
+snipper new
+	sub new :Constructor {
+		my ($self, ) = @_;
+
+		${2}
 	}
 snippet sub
 	sub ${1} {
