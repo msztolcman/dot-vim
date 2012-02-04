@@ -165,10 +165,6 @@ set modeline
 set modelines=10
 " formatting with par
 set formatprg=par\ -T4\ -w140
-" Vim's popup menu doesn't select the first completion item, but rather just
-" inserts the longest common text of all matches; and the menu will come up
-" even if there's only one match
-set completeopt=longest,menuone
 
 if has ('persistent_undo')
     " persistent undo
@@ -616,15 +612,8 @@ nmap <khome> <home>
 inoremap <silent> <home> <C-O>:call Home()<CR>
 nnoremap <silent> <home> :call Home()<CR>
 
-" enter key will simply select the highlighted menu item
+" po ctrl+[np] enter nie wstawi znaku nowej linii, tylko zaznaczony tekst
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-
-" make <C-N> work the way it normally does; however, when the menu appears, the <Down> key will be simulated
-inoremap <expr> <C-n> pumvisible() ? '<C-n>' : '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
-" simulates <C-X><C-O> to bring up the omni completion menu, then it simulates
-" <C-N><C-P> to remove the longest common text, and finally it simulates
-" <Down> again to keep a match highlighted
-inoremap <expr> <M-,> pumvisible() ? '<C-n>' : '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 
 "dopelnianie z iab'ow za pomoca ctrl+l
 imap <c-l> <c-]>
