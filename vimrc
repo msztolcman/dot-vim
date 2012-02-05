@@ -1,34 +1,24 @@
 " ##############################################################################
-" sety
+" sets
 " ##############################################################################
 
-"brak zgodnosci z VI
+" disable vi mode compatibility
 set nocompatible
 
+" start pathogen - our bundles are in ~/.vimrc/bundle
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-"dlugosc tabulatora
+" number of spaces that a <Tab> in the file counts for
 set tabstop=4
-"dlugosc wciec przy autoindent
+" number of spaces to use for each step of (auto)indent
 set shiftwidth=4
-"lub wielokrotnosc
+" round indent to multiple of 'shiftwidth'
 set shiftround
-"zamieniaj taby na spacje...
+" use the appropriate number of spaces to insert a <Tab>
 set expandtab
 "traktuj te poczatkowe spacje jak taby
-" set softtabstop=4
 set smarttab
-"automatyczne wciecia kodu
-" set autoindent
-"inteligentniejsze niz cindent
-" set smartindent
-"zeby kolejne wciecia byly takie same
-" set copyindent
-"jesli wciecie poprzednie bylo spacje, to nastepne tez ma byc spacja
-" set preserveindent
-"wciecia tak jak w kodzie c-podobnym
-"set cindent
 
 "jak ma dzialac backspace
 set backspace=indent,eol,start
