@@ -74,3 +74,7 @@
 	path = bundle/LargeFile
 	url = https://github.com/vim-scripts/LargeFile.git
 	ignore = untracked
+[submodule "bundle/tcomment"]
+	path = bundle/tcomment
+	url = https://github.com/tomtom/tcomment_vim.git
+	ignore = untracked
