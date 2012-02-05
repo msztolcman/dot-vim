@@ -610,10 +610,14 @@ imap <silent> <S-tab> <C-v><tab>
 imap <C-CR> <br />
 
 " mapujemy komendy dla mydevplugins
-map <silent> <F3> :call MDP_Commentify_Comment()<CR>
-map <silent> <S-F3> :call MDP_Commentify_UnComment()<CR>
-map <silent> <F2> :call MDP_Commentify_Switch()<CR>
-" map <Leader>p :call MDP_Execute ()<cr>
+" map <silent> <F3> :call MDP_Commentify_Comment()<CR>
+" map <silent> <S-F3> :call MDP_Commentify_UnComment()<CR>
+" map <silent> <F2> :call MDP_Commentify_Switch()<CR>
+
+map <silent> <F3> :TComment!<CR>
+map <silent> <F2> :TComment<CR>
+
+" run quickrun plugin with ,p
 map <Leader>p <Plug>(quickrun)
 
 " switch ` and ':
@@ -633,7 +637,7 @@ vmap <Leader>a= :Tabularize /=<CR>
 " Remap :W to :w
 command! W w
 
-" przeladowanie snippetow - ReloadSnippets
+" przeladowanie snippetow
 nmap <silent> ,rs :call ReloadAllSnippets ()<CR>
 
 " ##############################################################################
@@ -670,6 +674,10 @@ let g:quickrun_config = {
 
 " LargeFile definition
 let g:LargeFile = 6
+
+" tComment configuration
+let g:tcommentBlankLines = 1
+let g:tcommentOptions = {'col': 1}
 
 runtime! macros/matchit.vim
 
