@@ -82,3 +82,7 @@
 	path = bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
 	ignore = untracked
+[submodule "bundle/gummybears-colorscheme"]
+	path = bundle/gummybears-colorscheme
+	url = https://github.com/jelera/vim-gummybears-colorscheme
+	ignore = untracked
