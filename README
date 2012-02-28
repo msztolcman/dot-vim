@@ -18,6 +18,7 @@ Functions:
 Mappings (, is a <Leader> key, but comma is more readable ;) ):
     ,a= - align equal signs with Tabularize plugin
     ,fd - make 'cd:' to dirname () of current file
+    ,g - show registers list (call TRegisters command from tregisters plugin)
     ,j - fuzzy finder per line (FufLine)
     ,l - switch relative/absolute line numbering
     ,n - disable search hilghlighting

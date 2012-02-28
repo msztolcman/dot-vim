@@ -509,6 +509,9 @@ nnoremap <leader>t :call <SID>ToggleYesNo()<CR>
 " f7 run TaskList plugin
 map <f7> <Plug>TaskList
 
+" ,g calls registers list (tpope/tregisters)
+map <leader>g :TRegisters<CR>
+
 " use <leader>y to copy to system clipboard
 nmap <leader>y "*y
 nmap <leader>yy "*yy
