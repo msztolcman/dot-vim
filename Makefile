@@ -7,3 +7,4 @@ update:
 	git pull
 	git submodule foreach git co master
 	git submodule foreach git pull
+	git st
