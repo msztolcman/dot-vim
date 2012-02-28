@@ -19,7 +19,8 @@ Mappings (, is a <Leader> key, but comma is more readable ;) ):
     ,a= - align equal signs with Tabularize plugin
     ,fd - make 'cd:' to dirname () of current file
     ,g - show registers list (call TRegisters command from tregisters plugin)
-    ,j - fuzzy finder per line (FufLine)
+    ,fl - fuzzy finder per line (FufLine)
+    ,ff - fuzzy finder for file (FufFile)
     ,l - switch relative/absolute line numbering
     ,n - disable search hilghlighting
     ,p - run script in current buffer
@@ -38,7 +39,6 @@ Mappings (, is a <Leader> key, but comma is more readable ;) ):
     C-F1 - toggle displaying of 'hidden' white characters
     F2 - toggle comment/uncomment
     F3 - force comment (even if line is commented already)
-    F4 - fuzzy finder for file (FufFile)
     F5 - show function list and allow to go to this function (search with FindSubs() function)
     C-F5 - show list of occurrences of current word
     F6 - reload ~/.vimrc

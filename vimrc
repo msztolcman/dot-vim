@@ -554,10 +554,10 @@ map <F1> :call ToggleOption('wrap')<cr>
 nmap <c-f1> :call ToggleOption ('list')<cr>
 imap <c-f1> :call ToggleOption ('list')<cr>a
 
-" f4 - fuzzyfinder (FufFile)
-nmap <f4> :FufFile<cr>
-" ,j - fuzzyfinder (FufLine
-nmap <leader>j :FufLine<cr>
+" ,ff - fuzzyfinder (FufFile)
+nmap <Leader>ff :FufFile<cr>
+" ,fl - fuzzyfinder (FufLine)
+nmap <leader>fl :FufLine<cr>
 
 " wyszukiwanie funkcji
 map <silent> <F5> :call FindSubs()<CR>
