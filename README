@@ -38,7 +38,6 @@ Mappings (, is a <Leader> key, but comma is more readable ;) ):
     C-F1 - toggle displaying of 'hidden' white characters
     F2 - toggle comment/uncomment
     F3 - force comment (even if line is commented already)
-    S-F3 - force uncomment
     F4 - fuzzy finder for file (FufFile)
     F5 - show function list and allow to go to this function (search with FindSubs() function)
     C-F5 - show list of occurrences of current word

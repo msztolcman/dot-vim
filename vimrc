@@ -604,10 +604,6 @@ imap <silent> <S-tab> <C-v><tab>
 imap <C-CR> <br />
 
 " mapujemy komendy dla mydevplugins
-" map <silent> <F3> :call MDP_Commentify_Comment()<CR>
-" map <silent> <S-F3> :call MDP_Commentify_UnComment()<CR>
-" map <silent> <F2> :call MDP_Commentify_Switch()<CR>
-
 map <silent> <F3> :TComment!<CR>
 map <silent> <F2> :TComment<CR>
 
