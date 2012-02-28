@@ -203,7 +203,8 @@ syntax enable
 
 "schemat kolorow
 if has('gui_running')
-    colorscheme solarized
+"     colorscheme solarized
+    colorscheme gummybears
 else
     color evening
 endif
