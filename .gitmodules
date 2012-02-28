@@ -74,3 +74,7 @@
 	path = bundle/gummybears-colorscheme
 	url = https://github.com/jelera/vim-gummybears-colorscheme
 	ignore = untracked
+[submodule "bundle/SmartusLine"]
+	path = bundle/SmartusLine
+	url = https://github.com/vim-scripts/SmartusLine.git
+	ignore = untracked

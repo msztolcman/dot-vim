@@ -659,6 +659,12 @@ let g:solarized_contrast="high"
 
 let snippets_dir=$HOME.'/.vim/snippets'
 
+" SmartusLine configuration
+let g:smartusline_string_to_highlight = '%f%Y [%ob] [%{&ff}]'
+if &t_Co < 255
+    let g:smartusline_hi_insert = 'guibg=orange guifg=black ctermbg=cyan ctermfg=black'
+endif
+
 " quickrun config
 let g:quickrun_no_default_key_mappings = 1
 let g:quickrun_config = {
