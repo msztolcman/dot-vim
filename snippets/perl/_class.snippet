@@ -1,0 +1,152 @@
+#: ${1:}
+#< /hidden/classes/std_crud /hidden/classes/std_exceptions
+
+# @package ${2:}
+# @descr
+#
+
+# @class $1
+# @descr
+#
+# @related
+#   table: homenet.${3:}
+
+package $1;
+{
+	use base qw/StdCRUD/;
+
+	my (%CRUD_OTHER_FIELDS, $CRUD_PK, %CRUD_TABLE_FIELDS, $CRUD_TABLE_NAME, );
+
+    # @struct %$1::CRUD_OTHER_FIELDS
+    # @descr
+    #   Lista pol obslugiwanych przez klase $1 a bedace poza tabela glowna klasy
+    # @related
+    #   table: homenet.$3
+    #   $1::_get_other_fields
+
+    %CRUD_OTHER_FIELDS = (
+    );
+
+	# @struct $$1::CRUD_PK
+	# @descr
+	#   Nazwa klucza glownego z tabeli glownej klasy (\`homenet\`.\`$3\`)
+	# @related
+	#   table: homenet.$3
+	#   $1::_get_pk
+
+	$CRUD_PK = '${4}';
+
+	# @struct %$1::CRUD_TABLE_FIELDS
+	# @descr
+	#   Lista pol glownej tablicy klasy (`\homenet\`.\`$3\`) obslugiwanych przez klase
+	# @related
+	#   table: homenet.$3
+	#   $1::_get_table_fields
+
+	%CRUD_TABLE_FIELDS = (
+		${5}
+	);
+
+	# @struct $$1::CRUD_TABLE_NAME
+	# @descr
+	#   Nazwa glownej tabeli dla klasy
+	# @related
+	#   table: homenet.$3
+	#   $1::_get_table_name
+
+	$CRUD_TABLE_NAME = '$3';
+
+	# @function $1::_get_other_fields
+	# @descr
+	#   Zwraca liste pol obslugiwanych przez klase $1.
+	#   Realizuje metoda abstrakcyjna StdCRUD::_get_other_fields
+	# @input
+	#   brak
+	# @output
+	#   brak
+	# @related
+	#   StdCRUD::new
+	# @access protected
+
+	sub _get_other_fields {
+		return %CRUD_OTHER_FIELDS;
+	}
+
+	# @function $1::_get_pk
+	# @descr
+	#   Zwraca nazwe kolumny bedacej kluczem glownym (primary key) tabeli
+	#   Realizuje metoda abstrakcyjna StdCRUD::_get_pk
+	# @input
+	#   brak
+	# @output
+	#   * 0: (STRING) nazwa kolumny bedacej kluczem glownym tabeli
+	# @related
+	#   $$1::CRUD_PK
+	#   StdCRUD::new
+	# @access protected
+
+	sub _get_pk {
+		return $CRUD_PK;
+	}
+
+	# @function $1::_get_table_fields
+	# @descr
+	#   Metoda zwracajaca liste pol natywnie obslugiwanych przez StdCRUD
+	#   Realizuje metoda abstrakcyjna StdCRUD::_get_table_fields
+	# @input
+	#   brak
+	# @output
+	#   * 0: (HASH) lista pol (lista moze byc pusta)
+	#       ** [NAZWA POLA] - (BOOL) informacja o tym, czy wypelnienie tegoz pola jest wymagane
+	# @related
+	#   %$1::CRUD_TABLE_FIELDS
+	#   StdCRUD::new
+	# @access protected
+
+	sub _get_table_fields {
+		return %CRUD_TABLE_FIELDS;
+	}
+
+	# @function $1::_get_table_name
+	# @descr
+	#   Zwraca nazwe tabeli zawierajacej pola zawarte w 'table_data' (patrz: $1::_get_table_fields).
+	#   Realizuje metoda abstrakcyjna StdCRUD::_get_table_name
+	# @input
+	#   brak
+	# @output
+	#   * 0: (STRING) nazwa kolumny bedacej kluczem glownym tabeli
+	# @related
+	#   $$1::CRUD_TABLE_NAME
+	#   StdCRUD::new
+	# @access protected
+
+	sub _get_table_name {
+		return $CRUD_TABLE_NAME;
+	}
+
+	# @function $1::build_simple_where
+	# @descr
+	#   Obsluga uproszczonych (dla uzytkownika) warunkow dla metody StdCRUD::factory.
+	#
+	#   Metoda zwraca czesc SQL w formacie SQL::exec* ktora bedzie uzyta w bloku WHERE zapytania SQL
+	# @input
+	#   * 0: q - (ref. HASH) caly hasz ktory uzytkownik przekazal do metody StdCRUD::factory. Uzywamy klucza where, gdzie szukamy kluczy:
+	# @output
+	#   * 0: (ARRAY|ref. ARRAY) lista elementow zapytania SQL
+	# @related
+	#   table: homenet.$3
+	#   SQL
+	# @access public
+
+	sub build_simple_where {
+		my ($self, $q, ) = @_;
+
+		my (@where, );
+
+		return wantarray ? @where : \@where;
+	}
+
+}
+
+# $Id$
+# vim: ft=perl
