@@ -206,7 +206,8 @@ if has('gui_running')
 "     colorscheme solarized
     colorscheme gummybears
 else
-    color evening
+"     color evening
+    color solarized
 endif
 
 "podswietlanie skladni
