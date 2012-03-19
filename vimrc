@@ -217,8 +217,8 @@ match Todo /@todo/
 filetype plugin indent on
 
 if !exists(":DiffOrig")
-  command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
-          \ | wincmd p | diffthis
+    command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
+        \ | wincmd p | diffthis
 endif
 
 
@@ -497,7 +497,7 @@ endif
 nmap <leader>fd :silent! cd %:p:h<cr><Leader>pwd
 
 " ,l przelacza tryb numeracji linii
-nnoremap <leader>l :call ToggleRelativeAbsoluteNumber()<CR>
+nnoremap <silent> <leader>l :call ToggleRelativeAbsoluteNumber()<CR>
 
 " ,n remove search highlinth
 nmap <silent> <leader>n :silent noh<CR>
