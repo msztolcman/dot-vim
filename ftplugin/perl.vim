@@ -1,1 +1,1 @@
-imap <D-F1> cgi_dump ();2<Left>a
+imap <D-F1> CgiApp::dmp ();2<Left>a
