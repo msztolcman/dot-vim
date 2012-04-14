@@ -155,6 +155,8 @@ set modeline
 set modelines=10
 " formatting with par
 set formatprg=par\ -T4\ -w140
+" default comment style
+set commentstring=#\ %s
 
 if has ('persistent_undo')
     " persistent undo
