@@ -202,6 +202,8 @@ if isdirectory ($HOME . '/.vim/doc')
 endif
 
 syntax enable
+" Slower but better syncing -- hopefully no more dumb broken syntax
+syntax sync fromstart
 
 "schemat kolorow
 if has('gui_running')
