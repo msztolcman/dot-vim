@@ -68,8 +68,8 @@ set smartcase
 set nolist
 "ale jesli, to w okreslony sposob
 set lcs=eol:$,tab:‡›,trail:•,nbsp:.
-"nowe okno otwiera sie pod starym
-set splitbelow
+" When splitting, put new windows to the right (vertical) or below (horizontal)
+set splitbelow splitright
 "zeby nie zwijal domyslnie foldow
 set foldmethod=manual
 " kolumna z liniami foldow z lewej
