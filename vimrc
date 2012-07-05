@@ -523,7 +523,7 @@ nmap <leader>y "*y
 nmap <leader>yy "*yy
 
 " toggle spellchecking
-nmap <silent> <leader>s :set spell!<cr>
+nmap <silent> <leader>S :set spell!<cr>
 
 " Start substitution with word under cursor
 nmap <leader>z :%s/\<<c-r><c-w>\>/
@@ -640,6 +640,10 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+
+" mappings for splitjoin plugin (https://github.com/AndrewRadev/splitjoin.vim.git)
+nmap <Leader>j :SplitjoinJoin<cr>
+nmap <Leader>s :SplitjoinSplit<cr>
 
 " ##############################################################################
 " pozostale
