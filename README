@@ -21,6 +21,7 @@ Mappings (, is a <Leader> key, but comma is more readable ;) ):
     ,g - show registers list (call TRegisters command from tregisters plugin)
     ,fl - fuzzy finder per line (FufLine)
     ,ff - fuzzy finder for file (FufFile)
+    ,j - SplitjoinJoin - convert multiline statement into oneline (if ($a) { say } -> say if ($a))
     ,l - switch relative/absolute line numbering
     ,n - disable search hilghlighting
     ,p - run script in current buffer
@@ -28,7 +29,8 @@ Mappings (, is a <Leader> key, but comma is more readable ;) ):
     ,q - reformatting
     ,r - read ~/.vimxfer file and put content below (look at ,w)
     ,rs - reload SnipMate snippets for current filetype
-    ,s - toggle speelchecking
+    ,s - SplitjoinSplit - convert oneline statement into multiline (say if ($a) -> if ($a) { say })
+    ,S - toggle speelchecking
     ,t - switch boolean (many different types, look at s:ToggleYesNo())
     ,w - save selected text to external file (~/.vimxfer). Usefull when need to copy large part of data between vim instances. Use with ',r'.
     ,y - (doesn't work currently) copy selected text to system clipboard (register *)
