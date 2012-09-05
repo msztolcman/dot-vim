@@ -9,5 +9,5 @@ $Data::Dumper::Sortkeys = 1;
 $Data::Dumper::Terse = 1;
 $Data::Dumper::Indent = 1;
 $Data::Dumper::Quotekeys = 1;
-sub cgi_dump { say &Dumper; };
+sub dmp { say &Dumper; };
 
