@@ -231,7 +231,7 @@ match Todo /@todo/
 "rozpoznawanie typu pliku
 filetype plugin indent on
 
-if !exists(":DiffOrig")
+if !exists (":DiffOrig")
     command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
         \ | wincmd p | diffthis
 endif
