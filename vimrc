@@ -232,6 +232,9 @@ endif
 "podswietlanie skladni
 match Todo /@todo/
 
+" Highlight VCS conflict markers
+match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
+
 "rozpoznawanie typu pliku
 filetype plugin indent on
 
