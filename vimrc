@@ -109,7 +109,18 @@ set nocursorline
 set nocursorcolumn
 " w trybie komend pokazuje liste opcji po wcisnieciu tabulatora
 set wildmenu
-set wildignore=.svn,CVS,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,.git,.hg
+" ignore: VCS
+set wildignore=.svn,CVS,.git,.hg
+" ignore: images
+set wildignore+=*.jpg,*.jpeg,*.gif,*.bmp,*.png,*.xpm
+" ignore: compiled
+set wildignore+=*.o,*.a,*.class,*.so,*.obj,*.la
+" ignore: vim
+set wildignore+=*.sw?
+" ignore: python, perl
+set wildignore+=*.pyc,*.pyo,*.pmc
+" OSX bullshit
+set wildignore+=*.DS_Store
 " jeśli zawartość paragrafu jest zbyt długa, pokaż go (zamiast @)
 set display+=lastline
 " rozrozniamy takie kodowania:
