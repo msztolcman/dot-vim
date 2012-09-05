@@ -700,6 +700,9 @@ let g:LargeFile = 6
 " tComment configuration
 let g:tcommentBlankLines = 1
 let g:tcommentOptions = {'col': 1}
+let g:tcommentLineC = {
+    \ 'commentstring': '// %s',
+    \}
 
 runtime! macros/matchit.vim
 
