@@ -168,6 +168,10 @@ set modelines=10
 set formatprg=par\ -T4\ -w140
 " default comment style
 set commentstring=#\ %s
+" These commands open folds
+set foldopen=block,insert,jump,mark,percent,quickfix,search,tag,undo,hor
+" Syntax coloring lines that are too long just slows down the world
+set synmaxcol=400
 
 if has ('persistent_undo')
     " persistent undo
