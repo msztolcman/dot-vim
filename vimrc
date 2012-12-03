@@ -541,6 +541,8 @@ nmap <silent> <leader>S :set spell!<cr>
 nmap <leader>z :%s/\<<c-r><c-w>\>/
 vmap <leader>z :<c-u>%s/\<<c-r>*\>/
 
+" search for vcs markers
+nmap <leader>vcs /\(<<<<\\|====\\|>>>>\)<cr>
 
 "zawiniete linie - przechodzenie miedzy wierszami
 nnoremap <Down> gj
