@@ -32,6 +32,7 @@ Mappings (, is a <Leader> key, but comma is more readable ;) ):
     ,s - SplitjoinSplit - convert oneline statement into multiline (say if ($a) -> if ($a) { say })
     ,S - toggle speelchecking
     ,t - switch boolean (many different types, look at s:ToggleYesNo())
+    ,vcs - search for VCS markers (<<<< or ==== or >>>>)
     ,w - save selected text to external file (~/.vimxfer). Usefull when need to copy large part of data between vim instances. Use with ',r'.
     ,y - (doesn't work currently) copy selected text to system clipboard (register *)
     ,yy - copy current line to system clipboard (register *)
