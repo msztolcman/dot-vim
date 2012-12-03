@@ -221,13 +221,7 @@ syntax enable
 syntax sync fromstart
 
 "schemat kolorow
-if has('gui_running')
-"     colorscheme solarized
-    colorscheme gummybears
-else
-"     color evening
-    color solarized
-endif
+colorscheme Tomorrow-Night
 
 "podswietlanie skladni
 match Todo /@todo/
