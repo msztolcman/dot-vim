@@ -187,9 +187,9 @@ endif
 " proba ustawienia fonta:
 if has('gui_running')
     if has('gui_gtk2')
-        :set guifont=DejaVu\ Sans\ Mono\ 8
+        set guifont=DejaVu\ Sans\ Mono\ 8
     elseif has("gui_macvim")
-        :set guifont=DejaVu\ Sans\ Mono:h11
+        set guifont=DejaVu\ Sans\ Mono:h11
     endif
 endif
 
