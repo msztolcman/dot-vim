@@ -470,6 +470,7 @@ autocmd BufReadPost,BufWrite * call SetOverLength()
 autocmd BufWrite * call StripSpaces(1)
 
 " better omnicomplete
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd Filetype * if &omnifunc == "" | setlocal omnifunc=syntaxcomplete#Complete | endif
 
 au FileType perl set makeprg=perl5.12\ -c\ %\ $*
@@ -706,6 +707,14 @@ let g:tcommentOptions = {'col': 1}
 let g:tcommentLineC = {
     \ 'commentstring': '// %s',
     \}
+
+" pydoc config
+let g:pydoc_perform_mappings = 0
+let g:pydoc_highlight = 1
+let g:pydoc_open_cmd = 'split'
+
+" pep8
+let g:pep8_map='<leader>k'
 
 runtime! macros/matchit.vim
 
