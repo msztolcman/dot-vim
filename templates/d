@@ -1,8 +1,5 @@
-module Test;
-
-import tango.io.Stdout;
-
-int main(char[][] argv) {
+import std.stdio;
+int main(string[] argv) {
 
 	return 0;
 }
