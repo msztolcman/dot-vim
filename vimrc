@@ -96,7 +96,15 @@ set matchpairs=(:),{:},[:],<:>
 " don't insert 2 spaces after punctuation
 set nojoinspaces
 "ustawiamy wyglad linii statusu
-set statusline=%(%r%h%w\ %)%m%f%Y\ \[%ob\]\ \[%{&ff}\]%=%{fugitive#statusline()}\ \ \ \ A:\ %b\ H:\ %B\ \ \ \ \ \ \ %c%V,%l(%L)\ (%p%%)
+set statusline =%(%r%h%w\ %)                        " file info
+set statusline+=%m%f%Y\ \[%ob\]\ \[%{&ff}\]         " file size, format
+set statusline+=%=                                  " align to right
+" set statusline+=[%{SyntasticStatuslineFlag()}]\     " syntastic
+set statusline+=%{fugitive#statusline()}            " fugitive
+set statusline+=\ \ \ \                             " spaces
+set statusline+=A:\ %b\                             " value in ASCII code
+set statusline+=H:\ %B\ \ \ \ \ \ \                 " value in hex
+set statusline+=%c%V,%l(%L)\ (%p%%)
 "klawisz którym przełączamy siê miêdzy trybem paste a nopaste
 set pastetoggle=<F10>
 "zachowanie sie klawiszy ALT - prawy daje pliterki, lewy otwiera menu
