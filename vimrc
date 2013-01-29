@@ -170,6 +170,7 @@ set directory=~/.vim/tmp
 set grepprg="egrep -in"
 " wyladuj bufor jesli jest zamykana zakladka
 set nohidden
+set switchbuf=usetab,newtab
 set modeline
 set modelines=10
 " formatting with par
