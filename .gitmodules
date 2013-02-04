@@ -102,3 +102,7 @@
 	path = bundle/pep8
 	url = git://github.com/vim-scripts/pep8.git
 	ignore = untracked
+[submodule "bundle/webapi-vim"]
+	path = bundle/webapi-vim
+	url = git@github.com:mattn/webapi-vim.git
+	ignore = untracked
