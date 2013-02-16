@@ -725,6 +725,9 @@ let g:pydoc_open_cmd = 'split'
 " pep8
 let g:pep8_map='<leader>k'
 
+" gist
+let g:gist_clip_command = 'pbcopy'
+
 runtime! macros/matchit.vim
 
 if filereadable ($HOME.'/.vimrc.local')
