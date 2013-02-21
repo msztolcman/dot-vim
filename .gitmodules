@@ -94,10 +94,6 @@
 	path = bundle/pydoc.vim
 	url = git://github.com/fs111/pydoc.vim.git
 	ignore = untracked
-[submodule "bundle/pep8"]
-	path = bundle/pep8
-	url = git://github.com/vim-scripts/pep8.git
-	ignore = untracked
 [submodule "bundle/webapi-vim"]
 	path = bundle/webapi-vim
 	url = git@github.com:mattn/webapi-vim.git
