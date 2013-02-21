@@ -102,3 +102,7 @@
 	path = bundle/vim-perl
 	url = git://github.com/vim-perl/vim-perl.git
 	ignore = untracked
+[submodule "bundle/khuno-vim"]
+	path = bundle/khuno-vim
+	url = git://github.com/alfredodeza/khuno.vim.git
+	ignore = untracked
