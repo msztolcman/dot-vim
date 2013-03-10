@@ -649,10 +649,6 @@ noremap ` '
 " reformat
 nnoremap <leader>q gqip
 
-" tabularize plugin
-nmap <Leader>a= :Tabularize /=<CR>
-vmap <Leader>a= :Tabularize /=<CR>
-
 " Remap :W to :w
 command! W w
 
@@ -686,10 +682,6 @@ endif
 " konfiguracja plugina gundo
 let g:gundo_preview_bottom = 1
 
-" solarized colors
-let g:solarized_termcolors=256
-let g:solarized_contrast="high"
-
 let snippets_dir=$HOME.'/.vim/snippets'
 
 " SmartusLine configuration
@@ -716,14 +708,6 @@ let g:tcommentOptions = {'col': 1}
 let g:tcommentLineC = {
     \ 'commentstring': '// %s',
     \}
-
-" pydoc config
-let g:pydoc_perform_mappings = 0
-let g:pydoc_highlight = 1
-let g:pydoc_open_cmd = 'split'
-
-" pep8
-let g:pep8_map='<leader>k'
 
 " gist
 let g:gist_clip_command = 'pbcopy'
