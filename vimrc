@@ -728,6 +728,9 @@ let g:pep8_map='<leader>k'
 " gist
 let g:gist_clip_command = 'pbcopy'
 
+" showmarks
+let g:showmarks_include = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.`' + "'"
+
 " vim-gitgutter
 let g:gitgutter_enabled = 1
 let g:gitgutter_highlight_lines = 0
