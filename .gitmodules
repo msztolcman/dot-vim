@@ -70,10 +70,6 @@
 	path = bundle/splitjoin.vim
 	url = git://github.com/AndrewRadev/splitjoin.vim.git
 	ignore = untracked
-[submodule "bundle/vim-tomorrow-theme"]
-	path = bundle/vim-tomorrow-theme
-	url = git://github.com/chriskempson/vim-tomorrow-theme.git
-	ignore = untracked
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
