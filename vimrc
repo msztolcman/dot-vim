@@ -728,6 +728,10 @@ let g:pep8_map='<leader>k'
 " gist
 let g:gist_clip_command = 'pbcopy'
 
+" vim-gitgutter
+let g:gitgutter_enabled = 1
+let g:gitgutter_highlight_lines = 0
+
 runtime! macros/matchit.vim
 
 if filereadable ($HOME.'/.vimrc.local')
