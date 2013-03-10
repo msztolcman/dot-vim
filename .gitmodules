@@ -46,10 +46,6 @@
 	path = bundle/tregisters
 	url = https://github.com/tomtom/tregisters_vim.git
 	ignore = untracked
-[submodule "bundle/solarized"]
-	path = bundle/solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
-	ignore = untracked
 [submodule "bundle/sudo-gui"]
 	path = bundle/sudo-gui
 	url = https://github.com/gmarik/sudo-gui.vim.git
