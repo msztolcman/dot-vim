@@ -90,3 +90,7 @@
 	path = bundle/vim-gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
 	ignore = untracked
+[submodule "bundle/vim-tomorrow-theme"]
+	path = bundle/vim-tomorrow-theme
+	url = git://github.com/chriskempson/vim-tomorrow-theme.git
+	ignore = untracked
