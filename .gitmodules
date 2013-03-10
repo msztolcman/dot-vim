@@ -70,10 +70,6 @@
 	path = bundle/tcomment
 	url = https://github.com/tomtom/tcomment_vim.git
 	ignore = untracked
-[submodule "bundle/gummybears-colorscheme"]
-	path = bundle/gummybears-colorscheme
-	url = https://github.com/jelera/vim-gummybears-colorscheme
-	ignore = untracked
 [submodule "bundle/SmartusLine"]
 	path = bundle/SmartusLine
 	url = https://github.com/vim-scripts/SmartusLine.git
