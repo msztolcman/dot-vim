@@ -463,7 +463,7 @@ au BufNewFile,BufRead *.json set filetype=json syntax=javascript
 " nginx
 au BufRead,BufNewFile /etc/nginx/* setlocal ft=nginx
 " perl dla plikow bez rozszerzen
-au BufRead,BufNewFile * if &ft == '' && match (expand ('%:t'), '\.') == -1 | set filetype=perl | endif
+au BufRead,BufNewFile * if (&ft == '' || &ft == 'conf') && match (expand ('%:t'), '\.') == -1 | set filetype=perl | endif
 
 "pliki szablonow przy nowo tworzonych plikach
 autocmd BufNewFile * sil! exe "read ~/.vim/templates/"
