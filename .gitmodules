@@ -74,10 +74,6 @@
 	path = bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
 	ignore = untracked
-[submodule "bundle/webapi-vim"]
-	path = bundle/webapi-vim
-	url = git@github.com:mattn/webapi-vim.git
-	ignore = untracked
 [submodule "bundle/vim-perl"]
 	path = bundle/vim-perl
 	url = git://github.com/vim-perl/vim-perl.git
