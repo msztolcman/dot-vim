@@ -98,3 +98,10 @@
 	path = bundle/vim-node
 	url = https://github.com/moll/vim-node.git
 	ignore = untracked
+[submodule "bundle/vim-signature"]
+	path = bundle/vim-signature
+	url = https://github.com/kshenoy/vim-signature.git
+	ignore = untracked
+[submodule "bundle/vim-signature"]
+	path = bundle/vim-signature
+	url = https://github.com/kshenoy/vim-signature.git
