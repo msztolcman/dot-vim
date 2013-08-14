@@ -105,3 +105,8 @@
 [submodule "bundle/vim-signature"]
 	path = bundle/vim-signature
 	url = https://github.com/kshenoy/vim-signature.git
+	ignore = untracked
+[submodule "bundle/MatchTag"]
+	path = bundle/MatchTag
+	url = https://github.com/gregsexton/MatchTag
+	ignore = untracked
