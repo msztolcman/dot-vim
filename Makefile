@@ -5,7 +5,7 @@ install:
 
 update:
 	git pull
-	git submodule foreach git checkout master
+	git submodule foreach git checkout -qf master
 	git submodule foreach git clean -fdq
 	git submodule foreach git checkout -- .
 	git submodule foreach git pull
