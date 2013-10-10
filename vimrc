@@ -69,7 +69,10 @@ set smartcase
 "domyslnie nie pokazuj znakow konca linii i tabow
 set nolist
 "ale jesli, to w okreslony sposob
-set lcs=eol:$,tab:‡›,trail:•,nbsp:.
+set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+if !has('win32') && (&termencoding ==# 'utf-8' || &encoding ==# 'utf-8')
+    let &listchars="eol:$,tab:\u2021\u203A,trail:\u2022,nbsp:."
+endif
 " When splitting, put new windows to the right (vertical) or below (horizontal)
 set splitbelow splitright
 "zeby nie zwijal domyslnie foldow
