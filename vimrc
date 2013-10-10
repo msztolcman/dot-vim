@@ -462,6 +462,8 @@ au BufNewFile,BufRead *.mako set ft=mako
 au BufNewFile,BufRead *.tpl  set filetype=tpl syntax=html
 " json jako javascript
 au BufNewFile,BufRead *.json set filetype=json syntax=javascript
+" rs as rust
+au BufNewFile,BufRead *.rs set filetype=rust
 " nginx
 au BufRead,BufNewFile /etc/nginx/* setlocal ft=nginx
 
