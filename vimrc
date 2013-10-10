@@ -186,6 +186,8 @@ set commentstring=#\ %s
 set foldopen=block,insert,jump,mark,percent,quickfix,search,tag,undo,hor
 " Syntax coloring lines that are too long just slows down the world
 set synmaxcol=400
+" do not treat 0\d as octal digits for ctrl-a/ctrl-x
+set nrformats-=octal
 
 if has ('persistent_undo')
     " persistent undo
