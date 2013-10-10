@@ -6,7 +6,9 @@
 set nocompatible
 
 " start pathogen - our bundles are in ~/.vimrc/bundle
-call pathogen#runtime_append_all_bundles()
+" call pathogen#runtime_append_all_bundles()
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
 call pathogen#helptags()
 
 " number of spaces that a <Tab> in the file counts for
