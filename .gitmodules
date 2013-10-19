@@ -114,3 +114,7 @@
 	path = bundle/python-syntax
 	url = https://github.com/hdima/python-syntax.git
 	ignore = untracked
+[submodule "keyboard_cat.vim"]
+	path = keyboard_cat.vim
+	url = https://github.com/natw/keyboard_cat.vim.git
+	ignore = untracked
