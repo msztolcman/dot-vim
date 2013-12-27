@@ -118,3 +118,7 @@
 	path = keyboard_cat.vim
 	url = https://github.com/natw/keyboard_cat.vim.git
 	ignore = untracked
+[submodule "bundle/vim-vinegar"]
+	path = bundle/vim-vinegar
+	url = git://github.com/tpope/vim-vinegar.git
+	ignore = untracked
