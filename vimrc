@@ -488,7 +488,10 @@ autocmd BufReadPost,BufWrite * call SetOverLength()
 autocmd BufWrite * call StripSpaces(1)
 
 " better omnicomplete
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd Filetype * if &omnifunc == "" | setlocal omnifunc=syntaxcomplete#Complete | endif
 
 au FileType perl set makeprg=perl5.12\ -c\ %\ $*
