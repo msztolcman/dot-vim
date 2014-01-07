@@ -133,7 +133,7 @@ set wildignore+=*.sw?
 " ignore: python, perl
 set wildignore+=*.pyc,*.pyo,*.pmc
 " OSX bullshit
-set wildignore+=*.DS_Store
+set wildignore+=.DS_Store
 " jeśli zawartość paragrafu jest zbyt długa, pokaż go (zamiast @)
 set display+=lastline
 " rozrozniamy takie kodowania:
