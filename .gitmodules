@@ -126,3 +126,7 @@
 	path = bundle/badwolf
 	url = https://github.com/sjl/badwolf.git
 	ignore = untracked
+[submodule "bundle/minibufexplorer"]
+	path = bundle/minibufexplorer
+	url = https://github.com/techlivezheng/vim-plugin-minibufexpl.git
+	ignore = untracked
