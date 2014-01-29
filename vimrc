@@ -188,6 +188,8 @@ set foldopen=block,insert,jump,mark,percent,quickfix,search,tag,undo,hor
 set synmaxcol=400
 " do not treat 0\d as octal digits for ctrl-a/ctrl-x
 set nrformats-=octal
+" redraw only when we need to
+set lazyredraw
 
 if has ('persistent_undo')
     " persistent undo
