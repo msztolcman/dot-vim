@@ -72,5 +72,8 @@ Mappings (, is a <Leader> key, but comma is more readable ;) ):
     ' - swap with `
     ` - swap with '
 
+    v - expand selection (vim-expand-region)
+    C-v - shrink selection (vim-expand-region)
+
 Commands:
     W - the same as 'w' - write buffer
