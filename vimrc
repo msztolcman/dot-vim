@@ -733,6 +733,10 @@ let g:showmarks_include = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0
 let g:gitgutter_enabled = 1
 let g:gitgutter_highlight_lines = 0
 
+" vim-expand-region
+vmap v <Plug>(expand_region_expand)
+vmap <C-v> <Plug>(expand_region_shrink)
+
 runtime! macros/matchit.vim
 
 if filereadable ($HOME.'/.vimrc.local')
