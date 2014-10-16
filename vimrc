@@ -737,10 +737,13 @@ let g:gitgutter_highlight_lines = 0
 " vim-expand-region
 vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
+"
+" vim-signature
+let g:SignatureMap = { }
+let g:SignatureMap.Leader = "M"
 
 runtime! macros/matchit.vim
 
 if filereadable ($HOME.'/.vimrc.local')
     source $HOME/.vimrc.local
 endif
-
