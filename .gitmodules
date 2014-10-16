@@ -134,3 +134,7 @@
 	path = bundle/vim-expand-region
 	url = https://github.com/terryma/vim-expand-region.git
 	ignore = untracked
+[submodule "bundle/rust-vim"]
+	path = bundle/rust-vim
+	url = https://github.com/wting/rust.vim.git
+	ignore = untracked
