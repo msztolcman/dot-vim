@@ -725,6 +725,7 @@ let g:tcommentLineC = {
 
 " gist
 let g:gist_clip_command = 'pbcopy'
+let g:gist_show_privates = 1
 
 " showmarks
 let g:showmarks_include = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.`' + "'"
