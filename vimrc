@@ -463,6 +463,11 @@ endfunction
 " inny/nowy bufor zawsze w trybie normal
 au BufNew,BufEnter * stopinsert
 
+" do not use 'writebackup' feature for crons on mac
+if has("mac")
+    autocmd FileType crontab setlocal nowritebackup
+endif
+
 " rozpoznajemy mako
 au BufNewFile,BufRead *.mako set ft=mako
 " szablony jako html
