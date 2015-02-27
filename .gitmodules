@@ -138,3 +138,7 @@
 	path = bundle/rust-vim
 	url = https://github.com/wting/rust.vim.git
 	ignore = untracked
+[submodule "bundle/showmarks"]
+	path = bundle/showmarks
+	url = https://github.com/mysz/ShowMarks.git
+	ignore = untracked
