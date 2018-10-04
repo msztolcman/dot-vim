@@ -504,7 +504,7 @@ autocmd Filetype * if &omnifunc == "" | setlocal omnifunc=syntaxcomplete#Complet
 au FileType perl set makeprg=perl5.12\ -c\ %\ $*
 au FileType php set makeprg=php\ -f\ %\ $*
 au FileType ruby set makeprg=ruby\ %s\ $*
-au FileType python set makeprg=python2.7\ -tt\ %s\ $*
+au FileType python set makeprg=python3\ -tt\ %s\ $*
 " au FileType perl,php set errorformat=%f:%l:%m
 
 
