@@ -626,7 +626,7 @@ nnoremap < <<
 vmap > >gv
 vmap < <gv
 
-"zapewniamy sobie przesuwanie zahaszowanych linijek przy tabowaniu
+"zapewniamy sobie przesuwanie zahaszowanych linijek przy tabowaniu (^H => <CTRL+V><CTRL+H>)
 inoremap # X#
 
 " Make p in Visual mode replace the selected text with the "" register.
