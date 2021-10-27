@@ -1,4 +1,18 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-set -o nounset
+set -Eeuo pipefail
+SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd -P)
 
+cleanup() {
+    trap - SIGINT SIGTERM ERR EXIT
+    # script cleanup here
+}
+msg() {
+    echo >&2 -e "${1-}"
+}
+
+main() {
+  # script logic
+}
+
+main "$@"
