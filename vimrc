@@ -747,6 +747,9 @@ vmap <C-v> <Plug>(expand_region_shrink)
 let g:SignatureMap = { }
 let g:SignatureMap.Leader = "M"
 
+" editorconfig
+let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
+
 runtime! macros/matchit.vim
 
 if filereadable ($HOME.'/.vimrc.local')
